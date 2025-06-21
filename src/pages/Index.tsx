@@ -63,7 +63,7 @@ const Index = () => {
   const strategyDetails = {
     ironcondor: {
       title: "Iron Condor",
-      description: "Breakdown of the Iron Condor strategy with Tasty mechanics",
+      description: "Breakdown of the Iron Condor strategy with professional mechanics",
       content: {
         whatItIs: "A defined-risk, neutral options strategy combining a short put spread and a short call spread. It profits if the stock stays within a specific range through expiration.",
         whenToUse: "Ideal in high IV environments when a stock is expected to stay range-bound. Best with 45 DTE, selling strikes just outside the expected move.",
@@ -81,7 +81,7 @@ const Index = () => {
         ],
         maxProfit: "Net credit received",
         maxLoss: "Spread width minus credit received",
-        tastyTip: "Center your short strikes around the underlying's price or just outside the expected move. High IV rank is your friend — sell premium when it's expensive."
+        proTip: "Center your short strikes around the underlying's price or just outside the expected move. High IV rank is your friend — sell premium when it's expensive."
       }
     },
     ironbutterfly: {
@@ -104,7 +104,7 @@ const Index = () => {
         ],
         maxProfit: "Net credit received",
         maxLoss: "Spread width minus credit received",
-        tastyTip: "This setup is best when IV is elevated and the expected move is small. Stay mechanical and take profits early — this is a premium selling strategy, not a home run hitter."
+        proTip: "This setup is best when IV is elevated and the expected move is small. Stay mechanical and take profits early — this is a premium selling strategy, not a home run hitter."
       }
     },
     bullputspread: {
@@ -125,7 +125,7 @@ const Index = () => {
         ],
         maxProfit: "Net credit received",
         maxLoss: "Spread width minus credit received",
-        tastyTip: "These work best when the market overprices downside moves. Use them when IV rank is elevated and stay mechanical on profit-taking."
+        proTip: "These work best when the market overprices downside moves. Use them when IV rank is elevated and stay mechanical on profit-taking."
       }
     },
     strangle: {
@@ -146,7 +146,7 @@ const Index = () => {
         ],
         maxProfit: "Net credit received",
         maxLoss: "Theoretically unlimited on upside or downside",
-        tastyTip: "This is a premium harvesting strategy. Stay small, stay mechanical, and let time and IV contraction work in your favor."
+        proTip: "This is a premium harvesting strategy. Stay small, stay mechanical, and let time and IV contraction work in your favor."
       }
     },
     debitspread: {
@@ -167,7 +167,7 @@ const Index = () => {
         ],
         maxProfit: "Width of strikes minus debit paid",
         maxLoss: "Debit paid to enter",
-        tastyTip: "Use debit spreads when you want clean, directional setups and IV is low. Great for low IV breakouts or earnings plays where premium is cheap."
+        proTip: "Use debit spreads when you want clean, directional setups and IV is low. Great for low IV breakouts or earnings plays where premium is cheap."
       }
     }
   };
@@ -237,8 +237,8 @@ const Index = () => {
           </div>
 
           <div className="bg-purple-900/20 border border-purple-700 rounded-lg p-4">
-            <h5 className="font-semibold text-purple-400 mb-2">Tasty Tip:</h5>
-            <p className="text-gray-300 text-sm leading-relaxed">{strategy.content.tastyTip}</p>
+            <h5 className="font-semibold text-purple-400 mb-2">Pro Tip:</h5>
+            <p className="text-gray-300 text-sm leading-relaxed">{strategy.content.proTip}</p>
           </div>
         </CardContent>
       </Card>
@@ -256,7 +256,7 @@ const Index = () => {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-white">Options Strategy Bot</h1>
-              <p className="text-gray-400 text-sm">Teaching advanced options strategies with Tasty-style mechanics</p>
+              <p className="text-gray-400 text-sm">Teaching advanced options strategies with professional mechanics</p>
             </div>
           </div>
           <div className="flex items-center gap-2 text-sm text-gray-400">
