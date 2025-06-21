@@ -27,7 +27,7 @@ const Index = () => {
       strategies: [
         { id: 'ironcondor', name: 'Iron Condor', command: '/ironcondor' },
         { id: 'ironbutterfly', name: 'Iron Butterfly', command: '/ironbutterfly' },
-        { id: 'strangle', name: 'Strangle', command: '/strangle' },
+        { id: 'strangle', name: 'Short Strangle', command: '/strangle' },
         { id: 'straddle', name: 'Straddle', command: '/straddle' },
         { id: 'calendar', name: 'Calendar Spread', command: '/calendar' },
         { id: 'diagonal', name: 'Diagonal Spread', command: '/diagonal' },
