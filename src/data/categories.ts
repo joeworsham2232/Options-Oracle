@@ -1,5 +1,5 @@
 
-import { TrendingUp, TrendingDown, BarChart3, Target } from 'lucide-react';
+import { TrendingUp, TrendingDown, BarChart3 } from 'lucide-react';
 
 export const categories = {
   bullish: {
@@ -35,18 +35,6 @@ export const categories = {
       { id: 'putdebit', name: 'Put Debit Spread', command: '/debitspread' },
       { id: 'invertedstrangle', name: 'Inverted Strangle', command: '/invertedstrangle' },
       { id: 'ratiospread', name: 'Ratio Spread', command: '/ratioSpread' }
-    ]
-  },
-  directional: {
-    label: '🎯 Directional / Aggressive',
-    icon: Target,
-    strategies: [
-      { id: 'debitspread', name: 'Call/Put Debit Spread', command: '/debitspread' },
-      { id: 'ratiospread2', name: 'Ratio Spread', command: '/ratioSpread' },
-      { id: 'brokenwing2', name: 'Broken Wing Butterfly', command: '/brokenwingbutterfly' },
-      { id: 'invertedstrangle2', name: 'Inverted Strangle', command: '/invertedstrangle' },
-      { id: 'poormanscall2', name: "Poor Man's Covered Call", command: '/poorMansCoveredCall' },
-      { id: 'diagonal2', name: 'Diagonal Spread', command: '/diagonal' }
     ]
   }
 };

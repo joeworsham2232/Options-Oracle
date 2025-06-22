@@ -9,9 +9,11 @@ interface QuickCommandsProps {
 
 const QuickCommands: React.FC<QuickCommandsProps> = ({ onStrategySelect }) => {
   return (
-    <Card className="mt-8 bg-gray-800 border-gray-700">
+    <Card className="mt-8 bg-black border-cyan-500/50 shadow-lg shadow-cyan-500/20">
       <CardHeader>
-        <CardTitle className="text-white">Quick Commands</CardTitle>
+        <CardTitle className="text-transparent bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text">
+          Quick Commands
+        </CardTitle>
       </CardHeader>
       <CardContent>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
@@ -20,7 +22,7 @@ const QuickCommands: React.FC<QuickCommandsProps> = ({ onStrategySelect }) => {
               key={cmd}
               variant="ghost"
               size="sm"
-              className="justify-start font-mono text-purple-400 hover:bg-gray-700"
+              className="justify-start font-mono text-cyan-400 hover:bg-cyan-500/10 hover:text-cyan-300 transition-all duration-300"
               onClick={() => onStrategySelect(cmd)}
             >
               /{cmd}
